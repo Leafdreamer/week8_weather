@@ -1,7 +1,9 @@
 # This module is for initializing the database
-from app.load.db.connection import Connector
-from app.load.schemas.table_schema import TABLES
-from app.config import local_database_schema,docker_database_schema
+#
+from load.db.connection import Connector
+from load.schemas.table_schema import TABLES
+from config import local_database_schema,docker_database_schema
+#
 from psycopg2 import sql
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT

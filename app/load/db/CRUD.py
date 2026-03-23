@@ -1,8 +1,10 @@
-from app.load.db.connection import Connector
-from app.load.error_handling.type_control import test_parameter, test_parameters
-from app.load.schemas.table_schema import TABLES
+#
+from load.db.connection import Connector
+from load.error_handling.type_control import test_parameter, test_parameters
+from load.schemas.table_schema import TABLES
+from config import local_database_schema, docker_database_schema
+#
 from psycopg2 import sql
-from app.config import local_database_schema, docker_database_schema
 import os
 
 class CRUD:

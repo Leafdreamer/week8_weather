@@ -1,6 +1,8 @@
 import requests
 from datetime import datetime, timezone
-from app.config import new_spec_token
+#
+from config import new_spec_token
+#
 
 class NewSpecAPI:
     def __init__(self):

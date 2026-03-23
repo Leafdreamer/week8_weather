@@ -1,8 +1,13 @@
-from app.pipeline.etl import ETLProcess
-from app.load.db.initialize import DatabaseInitializer
-from app.config import docker
+#
+from pipeline.etl import ETLProcess
+from load.db.initialize import DatabaseInitializer
+from config import docker
+from load.db.CRUD import CRUD
+#
 import os
-from app.load.db.CRUD import CRUD
+
+# psql -U postgres -h localhost
+# SELECT * FROM "DMI";
 
 def main():
     initializer = DatabaseInitializer(docker=docker)

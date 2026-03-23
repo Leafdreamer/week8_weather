@@ -1,8 +1,10 @@
-from app.extract.specialisterne import SpecAPI
-from app.extract.new_specialisterne import NewSpecAPI
-from app.extract.dmi import DMIAPI
-from app.transform.transform import SpecDataTransformer, DMIDataTransformer
-from app.load.db.CRUD import CRUD
+#
+from extract.specialisterne import SpecAPI
+from extract.new_specialisterne import NewSpecAPI
+from extract.dmi import DMIAPI
+from transform.transform import SpecDataTransformer, DMIDataTransformer
+from load.db.CRUD import CRUD
+#
 import json
 import time
 from datetime import datetime, timedelta

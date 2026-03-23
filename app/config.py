@@ -14,7 +14,7 @@ spec_token = os.getenv("SPEC_TOKEN")
 new_spec_token = os.getenv("NEW_SPEC_TOKEN")
 
 #Variable to change whether you are running in Docker or not
-docker = True
+docker = False
 
 #local database connection details
 local_database_schema = {"database": os.getenv("LOCAL_DB"),
